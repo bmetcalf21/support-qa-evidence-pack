@@ -1,6 +1,6 @@
 # Support & QA Evidence Pack
 
-**Scope:** Training + hands-on labs for Tier-1 Technical Support and Junior QA roles.
+**Scope:** Training + hands-on labs for Tier-1 Technical Support and QA roles.
 This repo contains sanitized, simulated artifacts demonstrating familiarity with common helpdesk platforms and QA workflows.
 
 **Tools covered:**
