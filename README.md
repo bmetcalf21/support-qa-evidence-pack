@@ -4,10 +4,10 @@
 This repo contains sanitized, simulated artifacts demonstrating familiarity with common helpdesk platforms and QA workflows.
 
 **Tools covered:**
-- Jira Service Management (Badge earned)
-- Zendesk (Learning Path)
-- ServiceNow (PDI Labs)
-- Freshdesk (Hands-on configuration)
+- Jira Service Management (In-progress)
+- Zendesk (Learning Path) (In-progress)
+- ServiceNow (PDI Labs) (In-progress)
+- Freshdesk (Hands-on configuration) (In-progress)
 
 **Scenario Thread:** Account access / SSO + MFA login issues.
 
