@@ -5,7 +5,7 @@ This repo contains sanitized, simulated artifacts demonstrating familiarity with
 
 **Tools covered:**
 - Jira Service Management (Badge Complete)
-- Zendesk (Learning Path) (In-progress)
+- Zendesk Foundational Support Learning Path (In-progress)
 - ServiceNow (PDI Labs) (In-progress)
 - Freshdesk (Hands-on configuration) (In-progress)
 
