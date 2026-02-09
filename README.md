@@ -13,6 +13,8 @@ No real client or production data is included.
 ## Current Repository Contents
 - Tickets (simulated): `tickets/`
 - Knowledge base articles (simulated): `knowledge-base/`
+- QA artifacts (simulated): `qa-artifacts/`
+- Runbooks (simulated): `runbooks/`
 - Screenshots (tool exposure evidence): `screenshots/`
 - Reusable templates: `templates/`
 - Evidence index: `evidence-index.md`
@@ -22,8 +24,9 @@ No real client or production data is included.
 1. Open `tickets/ticket-01-mfa-loop.md`.
 2. Open `screenshots/jsm-ticket-01-mfa-loop.jpeg`.
 3. Open `knowledge-base/kb-001-password-reset-email-delivery.md`.
-4. Open `evidence-index.md`.
+4. Open `qa-artifacts/test-plan.md`.
+5. Open `runbooks/escalation-playbook.md`.
+6. Open `evidence-index.md`.
 
 ## Planned Build-Out (In Progress)
-- 2 bug reports, 1 test plan, and 1 runbook.
 - ServiceNow and Freshdesk badge artifacts as they are completed.

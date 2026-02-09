@@ -17,6 +17,10 @@ This file maps each artifact to the skill signal it demonstrates.
 | EV-009 | KB quality for password reset delivery incidents | `knowledge-base/kb-001-password-reset-email-delivery.md` | Complete | Mapped directly to ticket workflow |
 | EV-010 | KB quality for VPN DNS-resolution incidents | `knowledge-base/kb-002-vpn-dns-resolution.md` | Complete | Mapped directly to ticket workflow |
 | EV-011 | KB quality for MFA login-loop incidents | `knowledge-base/kb-003-mfa-loop.md` | Complete | Mapped directly to ticket workflow |
+| EV-012 | Defect documentation quality for auth failure routing | `qa-artifacts/bugs/bug-001-expired-password-redirect.md` | Complete | Reproducible issue with expected vs actual behavior |
+| EV-013 | Defect documentation quality for client sync UX | `qa-artifacts/bugs/bug-002-client-sync-conflict-state.md` | Complete | Captures conflict-state timing defect and user impact |
+| EV-014 | Structured regression planning across support-critical flows | `qa-artifacts/test-plan.md` | Complete | Entry/exit criteria with linked defects |
+| EV-015 | Escalation process rigor and handoff quality | `runbooks/escalation-playbook.md` | Complete | Severity rubric, evidence requirements, and closure checklist |
 
 ## Platform Exposure Tracker (Truth-Safe)
 
@@ -31,6 +35,6 @@ This file maps each artifact to the skill signal it demonstrates.
 
 - Tickets: complete (3 total)
 - KB articles: complete (3 total)
-- Bug reports: add 2
-- Test plan: add 1
-- Runbook: add 1
+- Bug reports: complete (2 total)
+- Test plan: complete (1)
+- Runbook: complete (1)
