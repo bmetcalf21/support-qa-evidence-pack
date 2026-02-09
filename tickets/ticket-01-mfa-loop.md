@@ -1,22 +1,30 @@
-# Ticket ID: [BLP-1] - [MFA Login Loop - User stuck at authentication prompt]
+# Ticket: TICKET-001 - MFA Login Loop
 
-**Status:** Resolved
-**Priority:** [Medium]
-**Tags:** [MFA, Login, SSO, User-Access]
+## Metadata
+- Platform: Jira Service Management (simulated)
+- Status: Resolved
+- Priority: Medium
+- Category: Access / MFA
+- User: Brandon Metcalf (simulated)
+- Environment: Chrome on Windows 10
+- Impact: Single user unable to authenticate
+- Tags: MFA, Login, SSO, User-Access
 
 ## User Report
-**User:** [Brandon Metcalf]
-**Issue:** User reports they cannot log in. States "I keep getting looped back to the enter code screen." After entering valid credentials, the browser refreshes the MFA prompt indefinitely without sending a push notification.
+User states: "I keep getting looped back to the enter code screen." After valid credentials, the MFA prompt reloads repeatedly and no push notification is received.
 
-## Triage & Troubleshooting
-1. **Verified User:** Checked Active Directory; account is not locked.
-2. **Environment:** User is on Chrome / Windows 10.
-3. **Action:** Asked user to clear cache/cookies and attempt Incognito mode.
-4. **Result:** Issue persisted in Incognito.
-5. **Action:** Reset MFA token on backend.
+## Triage and Troubleshooting
+1. Verified account in directory; account was active and not locked.
+2. Confirmed browser and OS details (Chrome, Windows 10).
+3. Asked user to clear cache/cookies and retry in Incognito mode.
+4. Issue persisted in Incognito mode.
+5. Reset MFA token in backend.
 
 ## Resolution
-User successfully logged in after MFA token reset. Guided user through new QR code setup.
+User logged in successfully after MFA token reset. Guided user through new QR code enrollment.
 
 ## Root Cause
-MFA token desync due to time drift on user device.
+MFA token desync caused by device time drift.
+
+## Evidence
+- `screenshots/jsm-ticket-01-mfa-loop.jpeg`
