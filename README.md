@@ -23,10 +23,8 @@ No real client or production data is included.
 ## Quick Review (60 Seconds)
 1. Open `tickets/ticket-01-mfa-loop.md`.
 2. Open `screenshots/jsm-ticket-01-mfa-loop.jpeg`.
-3. Open `knowledge-base/kb-001-password-reset-email-delivery.md`.
-4. Open `qa-artifacts/test-plan.md`.
-5. Open `runbooks/escalation-playbook.md`.
-6. Open `evidence-index.md`.
+3. Open `qa-artifacts/test-plan.md`.
+4. Open `evidence-index.md` for full cross-links (KBs, bugs, and runbook).
 
 ## Planned Build-Out (In Progress)
 - ServiceNow and Freshdesk badge artifacts as they are completed.
