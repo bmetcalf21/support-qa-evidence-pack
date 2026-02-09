@@ -28,3 +28,6 @@ MFA token desync caused by device time drift.
 
 ## Evidence
 - `screenshots/jsm-ticket-01-mfa-loop.jpeg`
+
+## Related Knowledge Base
+- `knowledge-base/kb-003-mfa-loop.md`

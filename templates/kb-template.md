@@ -1,18 +1,26 @@
-# KB Article: Troubleshooting MFA Loops
+# KB Article: [Title]
 
-**Audience:** Internal Helpdesk / End Users
-**Last Updated:** [Date]
+**Audience:** [Internal helpdesk / support agents / end users]  
+**Last Updated:** [YYYY-MM-DD]
 
 ## Issue
-Users are stuck in a loop where they enter the MFA code, the page reloads, and asks for the code again.
+[One-sentence issue statement.]
 
-## Quick Fix Checklist
-- [ ] Ensure PC/Phone time is set to "Automatic".
-- [ ] Clear Browser Cache & Cookies.
-- [ ] Try a different browser (Edge/Chrome).
+## Quick Checks
+- [ ] [Initial check]
+- [ ] [Second check]
+- [ ] [Third check]
 
 ## Resolution Steps for Agents
-1. Verify user status in Admin Console.
-2. If status is "Active," select **"Revoke MFA Tokens"**.
-3. Ask user to log in again; they will be prompted to re-scan the QR code.
-4. If issue persists, check Azure AD logs for "Conditional Access" failures.
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Step 4]
+
+## Escalation Criteria
+- [Condition 1]
+- [Condition 2]
+- [Condition 3]
+
+## Related Ticket
+- `[tickets/ticket-00x-example.md]`

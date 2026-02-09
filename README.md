@@ -8,9 +8,11 @@ No real client or production data is included.
 - Positioning: support/QA execution quality with clear triage, escalation, and documentation.
 - Platform exposure today: Jira Service Management (`screenshots/jsm-ticket-01-mfa-loop.jpeg`).
 - Platform learning in progress: ServiceNow and Freshdesk (`badges/README.md`).
+- Additional workflow simulation coverage: Zendesk-style and Freshdesk-style tickets.
 
 ## Current Repository Contents
 - Tickets (simulated): `tickets/`
+- Knowledge base articles (simulated): `knowledge-base/`
 - Screenshots (tool exposure evidence): `screenshots/`
 - Reusable templates: `templates/`
 - Evidence index: `evidence-index.md`
@@ -19,9 +21,9 @@ No real client or production data is included.
 ## Quick Review (60 Seconds)
 1. Open `tickets/ticket-01-mfa-loop.md`.
 2. Open `screenshots/jsm-ticket-01-mfa-loop.jpeg`.
-3. Open `evidence-index.md`.
+3. Open `knowledge-base/kb-001-password-reset-email-delivery.md`.
+4. Open `evidence-index.md`.
 
 ## Planned Build-Out (In Progress)
-- Additional tickets (flat structure in `tickets/`) to reach 3 total.
-- 2 KB articles, 2 bug reports, 1 test plan, and 1 runbook.
+- 2 bug reports, 1 test plan, and 1 runbook.
 - ServiceNow and Freshdesk badge artifacts as they are completed.
