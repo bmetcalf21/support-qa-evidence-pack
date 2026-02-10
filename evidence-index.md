@@ -22,16 +22,12 @@ This file maps each artifact to the skill signal it demonstrates.
 | EV-014 | Structured regression planning across support-critical flows | `qa-artifacts/test-plan.md` | Complete | Entry/exit criteria with linked defects |
 | EV-015 | Escalation process rigor and handoff quality | `runbooks/escalation-playbook.md` | Complete | Severity rubric, evidence requirements, and closure checklist |
 
-## Platform Exposure Tracker (Truth-Safe)
+## Credential Evidence Policy (Truth-Safe)
 
-| Platform | Current Evidence | Planned Proof Artifact | Status | Target Date |
-| --- | --- | --- | --- | --- |
-| Jira Service Management | `screenshots/jsm-ticket-01-mfa-loop.jpeg` | Additional ticket artifacts | Verified | Ongoing |
-| ServiceNow | None yet in this repo | Badge/cert screenshot in `badges/` and one simulated ticket | In Progress | February 16, 2026 |
-| Freshdesk | Simulated workflow artifact only (no platform screenshot yet): `tickets/ticket-03-vpn-dns.md` | Badge/cert screenshot in `badges/` | In Progress | February 16, 2026 |
-| Zendesk | Simulated workflow artifact only (no platform screenshot yet): `tickets/ticket-02-password-reset.md` | Optional screenshot and ticket artifact | In Progress | Backlog |
+- Credentials and badges are listed only after a proof artifact exists in `badges/`.
+- This public index intentionally omits target dates for credentials that are not yet earned.
 
-## Near-Term Build Targets
+## Current Build State
 
 - Tickets: complete (3 total)
 - KB articles: complete (3 total)

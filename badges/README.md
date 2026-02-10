@@ -1,17 +1,14 @@
-# Badges and Certifications (In Progress)
+# Badge and Certification Artifacts
 
-This folder stores proof artifacts for platform learning (screenshot or PDF exports).
+This folder stores proof files for earned platform credentials (screenshot or PDF export).
 
-Truth-safe rule: a platform is marked complete only after a proof file exists in this folder and is linked from `evidence-index.md`.
+Truth-safe rule: a credential is shown publicly only after its proof file exists in this folder and is linked from `evidence-index.md`.
 
-## Current Plan
+## File Naming Convention
 
-| Platform | Goal | Proof File Pattern | Status |
-| --- | --- | --- | --- |
-| ServiceNow | Complete an entry-level badge/cert | `badges/servicenow-YYYY-MM-DD.*` | In Progress |
-| Freshdesk | Complete an entry-level badge/cert | `badges/freshdesk-YYYY-MM-DD.*` | In Progress |
+- ServiceNow credentials: `badges/servicenow-<credential>-YYYY-MM-DD.(png|pdf)`
 
 ## Notes
 
-- All artifacts in this folder are from training and certification programs, not production environments.
-- Keep all artifacts sanitized and free of personal data.
+- Add artifacts only after completion; do not include planned or placeholder files.
+- All artifacts in this folder should be sanitized and free of personal data.

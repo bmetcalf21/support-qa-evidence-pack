@@ -6,9 +6,9 @@ No real client or production data is included.
 ## Current Scope
 - Focus areas: account access (SSO, MFA) with adjacent troubleshooting patterns.
 - Positioning: support/QA execution quality with clear triage, escalation, and documentation.
-- Platform exposure today: Jira Service Management (`screenshots/jsm-ticket-01-mfa-loop.jpeg`).
-- Platform learning in progress: ServiceNow and Freshdesk (`badges/README.md`).
+- Platform evidence today: Jira Service Management (`screenshots/jsm-ticket-01-mfa-loop.jpeg`).
 - Additional workflow simulation coverage: Zendesk-style and Freshdesk-style tickets.
+- Truth-safe rule: ServiceNow credential evidence is published only after a verifiable artifact is added in `badges/`.
 
 ## Current Repository Contents
 - Tickets (simulated): `tickets/`
@@ -18,7 +18,7 @@ No real client or production data is included.
 - Screenshots (tool exposure evidence): `screenshots/`
 - Reusable templates: `templates/`
 - Evidence index: `evidence-index.md`
-- Badge and cert tracker: `badges/`
+- Credential artifacts (earned only): `badges/`
 
 ## Quick Review (60 Seconds)
 1. Open `tickets/ticket-01-mfa-loop.md`.
@@ -26,5 +26,5 @@ No real client or production data is included.
 3. Open `qa-artifacts/test-plan.md`.
 4. Open `evidence-index.md` for full cross-links (KBs, bugs, and runbook).
 
-## Planned Build-Out (In Progress)
-- ServiceNow and Freshdesk badge artifacts as they are completed.
+## Planned Build-Out
+- Add ServiceNow credential artifact(s) after completion and verification.
