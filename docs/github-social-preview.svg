@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Support Operations Workflow Pack</title>
+  <desc id="desc">GitHub social preview image for a support operations portfolio repository.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1f33"/>
+      <stop offset="55%" stop-color="#123b5d"/>
+      <stop offset="100%" stop-color="#1a5f5a"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7fbfc" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#f7fbfc" stop-opacity="0.07"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d7edf2" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#07121f" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+
+  <circle cx="1110" cy="90" r="180" fill="#f4b942" fill-opacity="0.12"/>
+  <circle cx="1180" cy="520" r="220" fill="#8fe3cf" fill-opacity="0.1"/>
+  <circle cx="120" cy="560" r="190" fill="#89b7ff" fill-opacity="0.09"/>
+
+  <rect x="64" y="72" width="1152" height="496" rx="28" fill="url(#card)" stroke="#f2fbff" stroke-opacity="0.18" filter="url(#shadow)"/>
+
+  <text x="100" y="150" fill="#e8f6f8" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="3">PORTFOLIO REPOSITORY</text>
+
+  <text x="100" y="235" fill="#ffffff" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700">Support Operations</text>
+  <text x="100" y="305" fill="#ffffff" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700">Workflow Pack</text>
+
+  <text x="100" y="362" fill="#dbeff3" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="500">
+    Sanitized support cases, triage logic, escalation design, QA coverage,
+  </text>
+  <text x="100" y="398" fill="#dbeff3" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="500">
+    and a narrow AI assistant evaluation workflow.
+  </text>
+
+  <g font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="100" y="462" width="258" height="56" rx="18" fill="#f4b942" fill-opacity="0.18" stroke="#ffd97a" stroke-opacity="0.45"/>
+    <text x="229" y="498" text-anchor="middle" fill="#fff7de" font-size="24" font-weight="600">Technical Operations</text>
+
+    <rect x="378" y="462" width="286" height="56" rx="18" fill="#78d1bc" fill-opacity="0.18" stroke="#b8ffef" stroke-opacity="0.45"/>
+    <text x="521" y="498" text-anchor="middle" fill="#ebfff9" font-size="24" font-weight="600">Workflow Automation</text>
+
+    <rect x="684" y="462" width="202" height="56" rx="18" fill="#8faef9" fill-opacity="0.18" stroke="#d4deff" stroke-opacity="0.45"/>
+    <text x="785" y="498" text-anchor="middle" fill="#f3f6ff" font-size="24" font-weight="600">Applied AI</text>
+  </g>
+
+  <g font-family="Menlo, Monaco, Consolas, monospace">
+    <rect x="888" y="162" width="264" height="242" rx="22" fill="#081726" fill-opacity="0.62" stroke="#d9f7ff" stroke-opacity="0.14"/>
+    <text x="920" y="212" fill="#8fe3cf" font-size="24">decision: escalate</text>
+    <text x="920" y="258" fill="#e6f4f6" font-size="19">reason: multi-user impact</text>
+    <text x="920" y="292" fill="#e6f4f6" font-size="19">next: route to specialist</text>
+    <text x="920" y="344" fill="#f4b942" font-size="20">answer</text>
+    <text x="1012" y="344" fill="#d7edf2" font-size="20">|</text>
+    <text x="1030" y="344" fill="#b9d8ff" font-size="20">clarify</text>
+    <text x="1142" y="344" fill="#d7edf2" font-size="20">|</text>
+    <text x="920" y="378" fill="#ffdbc7" font-size="20">escalate</text>
+  </g>
+</svg>
