@@ -1,7 +1,7 @@
 # Runbook: Support Escalation Playbook
 
-**Owner:** Support Operations (simulated)  
-**Last Updated:** 2026-02-09
+**Owner:** Support operations portfolio example  
+**Last Updated:** 2026-03-27
 
 ## Purpose
 Provide a repeatable escalation workflow when first-line troubleshooting does not restore service or risk increases.
@@ -11,6 +11,11 @@ Provide a repeatable escalation workflow when first-line troubleshooting does no
 - Suspected defect or policy misconfiguration blocks resolution.
 - Security or access-control behavior is unclear.
 - User-impacting issue persists after standard troubleshooting checklist.
+
+## Do Not Escalate Yet When
+- The issue matches a documented KB path and the first-line recovery steps have not been tried.
+- The report is still missing basic environment details or exact symptoms.
+- The user has not yet confirmed whether the issue is resolved after a low-risk corrective step.
 
 ## Severity Guide
 
@@ -39,6 +44,11 @@ Provide a repeatable escalation workflow when first-line troubleshooting does no
 - Keep external updates factual; avoid root-cause speculation.
 - Log timestamps for all status updates and ownership changes.
 - Confirm receiving team acknowledges ownership before closing first-line ticket.
+
+## Related Files
+- `operations/triage-decision-guide.md`
+- `qa/bugs/bug-001-expired-password-redirect.md`
+- `cases/case-03-vpn-dns-resolution.md`
 
 ## Closure Checklist
 - [ ] Escalated team accepted handoff.

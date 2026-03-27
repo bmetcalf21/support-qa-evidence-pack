@@ -1,22 +1,25 @@
 # Bug ID: [BUG-00X] - [Title]
 
-**Severity:** [S3 - Major / S4 - Minor]
-**Environment:** [Production / Staging] - [Browser/OS]
+**Severity:** [S1 / S2 / S3 / S4]
+**Environment:** [Staging / Production-like / Local] - [Browser/OS/App Version]
 
 ## Description
-When a user attempts to sign in with an expired password, they are redirected to the homepage instead of the "Change Password" prompt.
+[One-paragraph summary of the defect and the user-visible failure.]
 
 ## Steps to Reproduce
-1. Go to Login Page.
-2. Enter username `test_user_expired`.
-3. Enter correct (but expired) password.
-4. Click "Sign In".
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Step 4]
 
 ## Expected Result
-User should be redirected to `/change-password` screen.
+[What should happen.]
 
 ## Actual Result
-User is redirected to `/home` (unauthenticated state) with no error message.
+[What actually happens.]
 
 ## Evidence
-[Insert Screenshot or Log Snippet Here]
+[Sanitized log, trace, screenshot reference, or command output.]
+
+## Impact
+[Why this matters for users, support load, or release risk.]

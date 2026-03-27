@@ -2,11 +2,11 @@
 
 This folder stores proof files for earned platform credentials (screenshot or PDF export).
 
-Truth-safe rule: a credential is shown publicly only after its proof file exists in this folder and is linked from `evidence-index.md`.
+Truth-safe rule: a credential is shown publicly only after its proof file exists in this folder and is linked from `artifact-map.md`.
 
 ## File Naming Convention
 
-- ServiceNow credentials: `badges/servicenow-<credential>-YYYY-MM-DD.(png|pdf)`
+- ServiceNow credentials: `evidence/badges/servicenow-<credential>-YYYY-MM-DD.(png|pdf)`
 
 ## Notes
 

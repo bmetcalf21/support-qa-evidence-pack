@@ -1,0 +1,44 @@
+[
+  {
+    "case_id": "eval-01",
+    "summary": "Single user is stuck in an MFA loop after valid credentials and has not yet tried token reset.",
+    "expected_decision": "answer",
+    "expected_refs": ["knowledge-base/kb-003-mfa-loop.md"],
+    "rationale": "This matches a known single-user access issue with a documented first-line recovery path."
+  },
+  {
+    "case_id": "eval-02",
+    "summary": "User says password reset never arrives, and auth logs show messages sent to an outdated alias.",
+    "expected_decision": "answer",
+    "expected_refs": ["knowledge-base/kb-001-password-reset-email-delivery.md"],
+    "rationale": "The issue matches a documented KB path and can be handled safely at first line."
+  },
+  {
+    "case_id": "eval-03",
+    "summary": "User reports VPN is broken but does not provide operating system, VPN client version, hostname, or any command output.",
+    "expected_decision": "clarify",
+    "expected_refs": [],
+    "rationale": "The report is too vague to choose a safe support path."
+  },
+  {
+    "case_id": "eval-04",
+    "summary": "Three users on one team started failing MFA sign-in within the last hour after a policy update.",
+    "expected_decision": "escalate",
+    "expected_refs": ["operations/escalation-playbook.md"],
+    "rationale": "This may be a multi-user policy issue and should not stay at first line."
+  },
+  {
+    "case_id": "eval-05",
+    "summary": "Expired-password users are being routed to the home page instead of the password-change flow.",
+    "expected_decision": "escalate",
+    "expected_refs": ["qa/bugs/bug-001-expired-password-redirect.md"],
+    "rationale": "This is a known defect affecting self-service recovery."
+  },
+  {
+    "case_id": "eval-06",
+    "summary": "A single user connects to VPN successfully but internal hostnames still fail after DNS flush and VPN profile reinstall.",
+    "expected_decision": "escalate",
+    "expected_refs": ["operations/escalation-playbook.md", "knowledge-base/kb-002-vpn-dns-resolution.md"],
+    "rationale": "The standard first-line path has already failed, so ownership should move up."
+  }
+]
