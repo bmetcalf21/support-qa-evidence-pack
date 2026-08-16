@@ -1,0 +1,42 @@
+{
+  "schema": "support-assistant-local-model-run/1",
+  "started_at_utc": "2026-08-16T02:33:31.327981Z",
+  "completed_at_utc": "2026-08-16T02:33:35.705220Z",
+  "transport": "local Ollama command over stdin",
+  "model": "qwen3.5:4b",
+  "argv": [
+    "python3",
+    "-B",
+    "applied-ai/harness.py",
+    "One user enters valid credentials but keeps returning to the MFA prompt.",
+    "--limit",
+    "20",
+    "--model-command",
+    "ollama",
+    "run",
+    "--format",
+    "json",
+    "--hidethinking",
+    "--think=false",
+    "--nowordwrap",
+    "qwen3.5:4b"
+  ],
+  "exit_status": 0,
+  "stderr_bytes": 0,
+  "harness_sha256": "4f78ad7f546bbde2ea04afa2e37fd447374a62e8f417792ddcdee3ca00614830",
+  "raw_stdout_sha256": "87adbc8d6052ca0a670055b6edbe42c978f9b50a1efe3b39bc0aa0e21870d463",
+  "request": "One user enters valid credentials but keeps returning to the MFA prompt.",
+  "retrieval_limit": 20,
+  "response": {
+    "decision": "answer",
+    "reason": "The request matches a known single-user issue pattern documented in `kb-003-mfa-loop.md` and `case-01-mfa-loop.md`. The environment details (implied via case reference), steps to resolve (verify account state, reset token state), and verification criteria are clearly defined as low-risk and reversible.",
+    "next_step": "Follow the First-Line Path in kb-003: verify account state, reset MFA token/session state, guide re-enrollment, and confirm successful login completion.",
+    "knowledge_refs": [
+      "knowledge-base/kb-003-mfa-loop.md",
+      "cases/case-01-mfa-loop.md",
+      "operations/triage-decision-guide.md"
+    ]
+  },
+  "validation": "passed",
+  "limitations": "Single local smoke run of the retrieve-invoke-validate path. The raw stdout contained the repository-public context packet and validated response; only its SHA-256 is retained here. This is not a benchmark, production result, or model-quality claim."
+}

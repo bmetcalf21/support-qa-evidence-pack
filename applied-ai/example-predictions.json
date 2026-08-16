@@ -1,0 +1,35 @@
+[
+  {
+    "case_id": "eval-01",
+    "decision": "answer",
+    "knowledge_refs": ["knowledge-base/kb-003-mfa-loop.md"]
+  },
+  {
+    "case_id": "eval-02",
+    "decision": "answer",
+    "knowledge_refs": ["knowledge-base/kb-001-password-reset-email-delivery.md"]
+  },
+  {
+    "case_id": "eval-03",
+    "decision": "clarify",
+    "knowledge_refs": []
+  },
+  {
+    "case_id": "eval-04",
+    "decision": "escalate",
+    "knowledge_refs": ["operations/escalation-playbook.md"]
+  },
+  {
+    "case_id": "eval-05",
+    "decision": "escalate",
+    "knowledge_refs": ["qa/bugs/bug-001-expired-password-redirect.md"]
+  },
+  {
+    "case_id": "eval-06",
+    "decision": "escalate",
+    "knowledge_refs": [
+      "operations/escalation-playbook.md",
+      "knowledge-base/kb-002-vpn-dns-resolution.md"
+    ]
+  }
+]

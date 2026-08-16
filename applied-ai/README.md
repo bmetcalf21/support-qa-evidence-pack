@@ -15,7 +15,10 @@ The assistant is designed for three decisions only:
 
 ## Files
 - `assistant-policy.md`: response contract, guardrails, and escalation rules
+- `harness.py`: provider-neutral retrieval, context-packet assembly, optional local model-command invocation, and structured-response validation
 - `evaluation-set.json`: small labeled examples tied to the cases, KBs, and QA artifacts in this repo
+- `example-predictions.json`: hand-authored, perfect-by-construction input for checking the scorer contract; not a model benchmark
+- `model-run-evidence.json`: one validated local `qwen3.5:4b` retrieve-invoke-validate smoke run; not a benchmark or production claim
 - `evaluate.py`: standard-library scoring script for candidate predictions
 
 ## Quick Check
@@ -32,15 +35,36 @@ Run the scorer against a prediction file in this format:
 ```
 
 ```bash
-python3 applied-ai/evaluate.py predictions.json
+python3 applied-ai/harness.py "One user enters valid credentials but keeps returning to the MFA prompt."
+python3 applied-ai/evaluate.py applied-ai/example-predictions.json --require-perfect
+python3 -m unittest discover -s tests -v
 ```
+
+An operator with a local Ollama model can exercise the complete invocation path without an API key:
+
+```bash
+python3 applied-ai/harness.py \
+  "One user enters valid credentials but keeps returning to the MFA prompt." \
+  --limit 20 \
+  --model-command ollama run --format json --hidethinking --think=false --nowordwrap qwen3.5:4b
+```
+
+`--model-command` is an argv list, not a shell string. The prompt is sent on stdin; nonzero exit, timeout, invalid JSON, invalid schema, unsupported citation, or an `answer` without a retrieved knowledge-base reference fails closed.
+
+Without `--model-command`, the CLI emits the context packet. With it, the CLI emits `{"packet": ..., "response": ...}` after response validation. Citation accuracy uses exact-set agreement across every evaluation case, including an empty expected set for a correct abstention.
 
 ## What It Demonstrates
 - AI workflow design grounded in operational policy
+- Deterministic retrieval from approved repository sources
+- Inspectable prompt/context assembly with repository-relative citations
+- Structured-response validation that rejects references outside the retrieved set and answers without a retrieved knowledge-base reference
 - Guardrails for when not to automate
 - A lightweight evaluation approach for answer-versus-escalate accuracy
 
 ## Deliberate Limits
 - No claim of production deployment
+- No bundled model, provider SDK, API key, or model-quality claim
+- The committed model-run evidence is one local smoke test, not an evaluation benchmark
+- No claim that citation membership proves the response text is semantically entailed by the cited source
 - No fake analytics or dashboarding
 - No generic chatbot claims beyond the artifacts in this folder

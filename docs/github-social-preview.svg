@@ -34,10 +34,10 @@
   <text x="100" y="305" fill="#ffffff" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700">Workflow Pack</text>
 
   <text x="100" y="362" fill="#dbeff3" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="500">
-    Sanitized support cases, triage logic, escalation design, QA coverage,
+    Support workflows with explicit triage and escalation.
   </text>
   <text x="100" y="398" fill="#dbeff3" font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="500">
-    and a narrow AI assistant evaluation workflow.
+    QA coverage plus a bounded, inspectable AI evaluation.
   </text>
 
   <g font-family="Avenir Next, Segoe UI, Helvetica, Arial, sans-serif">
